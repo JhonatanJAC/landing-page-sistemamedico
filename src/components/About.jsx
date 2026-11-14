@@ -43,12 +43,9 @@ export default function About() {
             </div>
 
             {/* Texto de Presentación Oficial */}
-            <div className="space-y-2.5 text-xs sm:text-[13px] text-slate-600 leading-relaxed text-justify">
+            <div className="text-xs sm:text-[13px] text-slate-600 leading-relaxed text-justify">
               <p>
                 Es un placer presentarles al centro de especialidades médicas y odontológicas <strong>DENTIMEDIC</strong>, ubicada en el Norte de Quito, Carapungo. Calle Alcalá OE6-11 y Alhambra, somos un grupo de profesionales dedicados a la salud con el fin de ofrecer servicios médicos y odontológicos de calidad con un enfoque especializado en la salud y atención integral para toda la familia. Nuestro equipo de profesionales altamente capacitados se compromete en brindar un cuidado médico y odontológico personalizado y eficiente, con instalaciones de calidad y trato humano excepcional.
-              </p>
-              <p>
-                En <strong>DENTIMEDIC</strong> entendemos que la salud es fundamental para el bienestar general, por lo que ofrecemos una amplia gama de servicios <strong>MÉDICOS</strong> (Medicina General, Medicina Interna, Ginecología y Obstetricia, Pediatría, Otorrinolaringología, Dermatología, Neurología, Nutrición, Gastroenterología, Urología, Traumatología y Ortopedia, Terapia Física, Terapia Del Lenguaje, Psicología Clínica, Psicología Infantil) y <strong>ODONTOLÓGICOS</strong> (Odontología General, Cirugía Oral y Maxilofacial, Odontopediatría, Rehabilitación Oral, Endodoncia, Ortodoncia, Periodoncia).
               </p>
             </div>
 
