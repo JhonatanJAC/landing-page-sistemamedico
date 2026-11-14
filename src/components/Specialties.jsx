@@ -30,7 +30,7 @@ export default function Specialties({ onSelectSpecialty }) {
         {/* Buscador Rápido y Contador */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mb-8 max-w-4xl mx-auto">
           <div className="text-xs text-slate-500 font-medium">
-            Mostrando <strong className="text-slate-900">{filtered.length}</strong> de {SPECIALTIES.length} especialidades médicas
+            Mostrando <strong className="text-slate-900">{filtered.length}</strong> de {SPECIALTIES.length} especialidades
           </div>
 
           <div className="w-full sm:w-72">

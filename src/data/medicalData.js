@@ -142,6 +142,39 @@ export const SPECIALTIES = [
     desc: "Vías urinarias masculinas y femeninas, próstata y riñones.",
     schedule: "Coordinación previa de horario",
     icon: "Cross"
+  },
+  {
+    id: "neurologia",
+    title: "Neurología",
+    category: "medicina",
+    categoryLabel: "Especialidad Médica",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Migrañas, dolores de cabeza, sistema nervioso y control neurológico.",
+    schedule: "Coordinación previa de horario",
+    icon: "Brain"
+  },
+  {
+    id: "terapia-fisica",
+    title: "Terapia Física",
+    category: "terapias",
+    categoryLabel: "Rehabilitación",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Rehabilitación muscular, contracturas y movilidad física.",
+    schedule: "Coordinación previa de horario",
+    icon: "Activity"
+  },
+  {
+    id: "podologia",
+    title: "Podología",
+    category: "terapias",
+    categoryLabel: "Cuidado Podológico",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Uña encarnada, callosidades y cuidado preventivo del pie.",
+    schedule: "Coordinación previa de horario",
+    icon: "Footprints"
   }
 ];
 

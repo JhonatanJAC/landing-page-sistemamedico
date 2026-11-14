@@ -31,6 +31,7 @@ export const SPECIALTY_GROUPS = [
       { value: 'Otorrinolaringología', label: 'Otorrinolaringología', badge: 'Previa Cita', hint: 'Oído, nariz, garganta y lavados' },
       { value: 'Traumatología y Ortopedia', label: 'Traumatología', badge: 'Previa Cita', hint: 'Fracturas, dolor articular y columna' },
       { value: 'Urología', label: 'Urología', badge: 'Previa Cita', hint: 'Vías urinarias masculinas y femeninas' },
+      { value: 'Neurología', label: 'Neurología', badge: 'Previa Cita', hint: 'Migrañas, sistema nervioso y cefaleas' },
       { value: 'Nutrición Clínica', label: 'Nutrición', badge: 'Previa Cita', hint: 'Planes nutricionales y control de peso' },
       { value: 'Psicología Clínica', label: 'Psicología Clínica', badge: 'Previa Cita', hint: 'Terapia adultos: ansiedad y estrés' },
       { value: 'Psicología Infantil', label: 'Psicología Infantil', badge: 'Previa Cita', hint: 'Conducta, atención y emociones en niños' },
