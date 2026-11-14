@@ -24,7 +24,7 @@ export const CLINIC_INFO = {
 };
 
 export const SPECIALTIES = [
-  // Especialidades Médicas con énfasis en precios ($10 y $30)
+  // Especialidades Médicas y sus Tarifas Oficiales
   {
     id: "medicina-general",
     title: "Medicina General",
@@ -52,7 +52,7 @@ export const SPECIALTIES = [
     title: "Pediatría",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$25 USD",
     badgeType: "price-specialty",
     desc: "Control de crecimiento, vacunas y salud infantil.",
     schedule: "Coordinación previa de horario",
@@ -74,7 +74,7 @@ export const SPECIALTIES = [
     title: "Gastroenterología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$35 USD",
     badgeType: "price-specialty",
     desc: "Gastritis, Helicobacter pylori, reflujo y colon irritable.",
     schedule: "Coordinación previa de horario",
@@ -96,7 +96,7 @@ export const SPECIALTIES = [
     title: "Otorrinolaringología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$35 USD",
     badgeType: "price-specialty",
     desc: "Oído, nariz, garganta, sinusitis y lavados óticos.",
     schedule: "Coordinación previa de horario",
@@ -107,7 +107,7 @@ export const SPECIALTIES = [
     title: "Traumatología y Ortopedia",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$35 USD",
     badgeType: "price-specialty",
     desc: "Fracturas, esguinces, dolores articulares y lumbalgia.",
     schedule: "Coordinación previa de horario",
@@ -129,9 +129,20 @@ export const SPECIALTIES = [
     title: "Neurología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$35 USD",
     badgeType: "price-specialty",
     desc: "Migrañas, dolores de cabeza, sistema nervioso y control neurológico.",
+    schedule: "Coordinación previa de horario",
+    icon: "Brain"
+  },
+  {
+    id: "psiquiatria",
+    title: "Psiquiatría",
+    category: "medicina",
+    categoryLabel: "Salud Mental",
+    badge: "$50 USD",
+    badgeType: "price-specialty",
+    desc: "Evaluación médica psiquiátrica, salud mental y tratamiento clínico especializado.",
     schedule: "Coordinación previa de horario",
     icon: "Brain"
   },
@@ -140,7 +151,7 @@ export const SPECIALTIES = [
     title: "Nutrición",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "$30 USD",
+    badge: "$15 USD",
     badgeType: "price-specialty",
     desc: "Planes nutricionales clínicos y control de peso.",
     schedule: "Coordinación previa de horario",
@@ -151,7 +162,7 @@ export const SPECIALTIES = [
     title: "Psicología Clínica",
     category: "medicina",
     categoryLabel: "Salud Mental",
-    badge: "$30 USD",
+    badge: "$15 USD",
     badgeType: "price-specialty",
     desc: "Psicoterapia para ansiedad, depresión, estrés y duelo.",
     schedule: "Coordinación previa de horario",
@@ -162,7 +173,7 @@ export const SPECIALTIES = [
     title: "Psicología Infantil",
     category: "medicina",
     categoryLabel: "Salud Mental",
-    badge: "$30 USD",
+    badge: "$17 USD",
     badgeType: "price-specialty",
     desc: "Apoyo en conducta, atención y desarrollo emocional infantil.",
     schedule: "Coordinación previa de horario",
@@ -173,7 +184,7 @@ export const SPECIALTIES = [
     title: "Terapia Física",
     category: "medicina",
     categoryLabel: "Rehabilitación",
-    badge: "$30 USD",
+    badge: "$15 USD",
     badgeType: "price-specialty",
     desc: "Rehabilitación muscular, contracturas y movilidad física.",
     schedule: "Coordinación previa de horario",
@@ -184,8 +195,8 @@ export const SPECIALTIES = [
     title: "Podología",
     category: "medicina",
     categoryLabel: "Cuidado Podológico",
-    badge: "$30 USD",
-    badgeType: "price-specialty",
+    badge: "Previa Cita",
+    badgeType: "appointment",
     desc: "Uña encarnada, callosidades y cuidado preventivo del pie.",
     schedule: "Coordinación previa de horario",
     icon: "Footprints"
@@ -378,7 +389,7 @@ export const FAQS = [
   },
   {
     q: "¿Cuáles son las tarifas y costos de consulta en DENTIMEDIC?",
-    a: "Nuestras tarifas oficiales están pensadas para cuidar tu salud y tu economía: Consulta Odontológica ¡GRATUITA! (evaluación y diagnóstico), Consulta Médica General por solo $10 USD, Consulta de Ginecología y Obstetricia por solo $10 USD, y las demás Especialidades Médicas (Pediatría, Dermatología, Traumatología, Neurología, etc.) por solo $30 USD."
+    a: "Nuestras tarifas oficiales son accesibles y transparentes: Consulta Odontológica ¡GRATUITA! (evaluación y diagnóstico), Medicina General y Ginecología a $10 USD, Nutrición, Psicología Clínica y Terapia Física a $15 USD, Psicología Infantil a $17 USD, Pediatría a $25 USD, Dermatología, Medicina Interna y Urología a $30 USD, Gastroenterología, Otorrinolaringología, Traumatología y Neurología a $35 USD, y Psiquiatría a $50 USD. Podología se coordina bajo previa cita."
   },
   {
     q: "¿Qué medios de pago aceptan?",

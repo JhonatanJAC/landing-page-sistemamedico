@@ -24,17 +24,18 @@ export const SPECIALTY_GROUPS = [
     items: [
       { value: 'Consulta Médica General ($10 USD)', label: 'Medicina General', badge: '$10 USD', badgeType: 'promo-price', hint: 'Atención primaria y recetas (Mar, Jue, Sáb)' },
       { value: 'Ginecología y Obstetricia ($10 USD)', label: 'Ginecología y Obstetricia', badge: '$10 USD', badgeType: 'promo-price', hint: 'Control prenatal, ecografía y chequeo' },
-      { value: 'Pediatría ($30 USD)', label: 'Pediatría', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Control de crecimiento, vacunas y salud infantil' },
+      { value: 'Pediatría ($25 USD)', label: 'Pediatría', badge: '$25 USD', badgeType: 'price-specialty', hint: 'Control de crecimiento, vacunas y salud infantil' },
       { value: 'Dermatología ($30 USD)', label: 'Dermatología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Acné, manchas, alergias y hongos' },
-      { value: 'Gastroenterología ($30 USD)', label: 'Gastroenterología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Gastritis, reflujo, Helicobacter y colon' },
+      { value: 'Gastroenterología ($35 USD)', label: 'Gastroenterología', badge: '$35 USD', badgeType: 'price-specialty', hint: 'Gastritis, reflujo, Helicobacter y colon' },
       { value: 'Medicina Interna ($30 USD)', label: 'Medicina Interna', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Hipertensión, diabetes y salud del adulto' },
-      { value: 'Otorrinolaringología ($30 USD)', label: 'Otorrinolaringología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Oído, nariz, garganta y lavados' },
-      { value: 'Traumatología y Ortopedia ($30 USD)', label: 'Traumatología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Fracturas, dolor articular y columna' },
+      { value: 'Otorrinolaringología ($35 USD)', label: 'Otorrinolaringología', badge: '$35 USD', badgeType: 'price-specialty', hint: 'Oído, nariz, garganta y lavados' },
+      { value: 'Traumatología y Ortopedia ($35 USD)', label: 'Traumatología', badge: '$35 USD', badgeType: 'price-specialty', hint: 'Fracturas, dolor articular y columna' },
       { value: 'Urología ($30 USD)', label: 'Urología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Vías urinarias masculinas y femeninas' },
-      { value: 'Neurología ($30 USD)', label: 'Neurología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Migrañas, sistema nervioso y cefaleas' },
-      { value: 'Nutrición Clínica ($30 USD)', label: 'Nutrición', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Planes nutricionales y control de peso' },
-      { value: 'Psicología Clínica ($30 USD)', label: 'Psicología Clínica', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Terapia adultos: ansiedad y estrés' },
-      { value: 'Psicología Infantil ($30 USD)', label: 'Psicología Infantil', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Conducta, atención y emociones en niños' },
+      { value: 'Neurología ($35 USD)', label: 'Neurología', badge: '$35 USD', badgeType: 'price-specialty', hint: 'Migrañas, sistema nervioso y cefaleas' },
+      { value: 'Psiquiatría ($50 USD)', label: 'Psiquiatría', badge: '$50 USD', badgeType: 'price-specialty', hint: 'Salud mental y manejo psiquiátrico clínico' },
+      { value: 'Nutrición Clínica ($15 USD)', label: 'Nutrición', badge: '$15 USD', badgeType: 'price-specialty', hint: 'Planes nutricionales y control de peso' },
+      { value: 'Psicología Clínica ($15 USD)', label: 'Psicología Clínica', badge: '$15 USD', badgeType: 'price-specialty', hint: 'Terapia adultos: ansiedad y estrés' },
+      { value: 'Psicología Infantil ($17 USD)', label: 'Psicología Infantil', badge: '$17 USD', badgeType: 'price-specialty', hint: 'Conducta, atención y emociones en niños' },
     ]
   },
   {
@@ -45,9 +46,9 @@ export const SPECIALTY_GROUPS = [
       { value: 'Laboratorio Clínico', label: 'Laboratorio Clínico', badge: 'Exámenes', hint: 'Sangre, orina, perfiles y chequeos' },
       { value: 'Ecografías', label: 'Ecografías', badge: 'Diagnóstico', hint: 'Ultrasonidos diagnósticos nítidos' },
       { value: 'Sueros Vitamínicos (Megadosis C)', label: 'Sueros Vitamínicos', badge: 'Megadosis', hint: 'Vitamina C e inmunidad' },
-      { value: 'Terapia Física', label: 'Terapia Física', badge: 'Rehabilitación', hint: 'Rehabilitación física y masajes' },
+      { value: 'Terapia Física ($15 USD)', label: 'Terapia Física', badge: '$15 USD', badgeType: 'price-specialty', hint: 'Rehabilitación muscular, contracturas y movilidad' },
       { value: 'Terapia del Lenguaje', label: 'Terapia del Lenguaje', badge: 'Rehabilitación', hint: 'Pronunciación y estimulación del habla' },
-      { value: 'Podología', label: 'Podología', badge: 'Cuidado del pie', hint: 'Uña encarnada y pie diabético' },
+      { value: 'Podología', label: 'Podología', badge: 'Previa Cita', hint: 'Uña encarnada y pie diabético' },
       { value: 'Nebulizaciones / Inyecciones', label: 'Procedimientos Menores', badge: 'Enfermería', hint: 'Inyectables y nebulizaciones' },
     ]
   }

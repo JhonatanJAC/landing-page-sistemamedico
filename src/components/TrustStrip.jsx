@@ -12,7 +12,7 @@ export default function TrustStrip() {
     },
     {
       title: "Precios Accesibles",
-      desc: "Medicina y Ginecología $10 | Especialidades $30"
+      desc: "Medicina y Ginecología $10 | Tarifas transparentes"
     },
     {
       title: "Pagos Electrónicos",
