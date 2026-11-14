@@ -79,19 +79,12 @@ export default function Contact({ prefilledSpecialty }) {
 
             {/* Teléfonos */}
             <div className="bg-white p-6 rounded-2xl border-l-4 border-l-brand-dark border border-slate-200 shadow-sm">
-              <h4 className="text-sm font-extrabold text-slate-900 mb-1">Teléfonos de Citas</h4>
+              <h4 className="text-sm font-extrabold text-slate-900 mb-1">Teléfono y Citas</h4>
               <p className="text-xs sm:text-sm text-slate-600">
                 Línea de Citas WhatsApp:{' '}
                 <a href={`https://wa.me/${CLINIC_INFO.whatsappMain}`} target="_blank" rel="noopener noreferrer" className="font-bold text-brand-600 hover:underline">
                   {CLINIC_INFO.phoneMain}
                 </a>
-              </p>
-              <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                Coordinación de Citas:{' '}
-                <a href={`tel:${CLINIC_INFO.phoneCoordination.replace(/\s+/g, '')}`} className="font-bold text-brand-dark hover:underline">
-                  {CLINIC_INFO.phoneCoordination}
-                </a>{' '}
-                ({CLINIC_INFO.coordinatorName})
               </p>
             </div>
 

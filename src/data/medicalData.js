@@ -4,8 +4,6 @@ export const CLINIC_INFO = {
   slogan: "Tu salud es nuestra prioridad",
   phoneMain: "0990347911",
   whatsappMain: "593990347911",
-  phoneCoordination: "+593 99 600 2626",
-  coordinatorName: "Gissela",
   address: "Quito, Carapungo. Calle Alcalá OE6 11 y Alhambra.",
   sector: "Sector La Morenita",
   reference: "A dos cuadras de la agencia de la empresa eléctrica.",
@@ -377,7 +375,7 @@ export const FACILITIES = [
 export const FAQS = [
   {
     q: "¿Cómo puedo agendar una cita médica u odontológica en DENTIMEDIC?",
-    a: "Puedes agendar de forma inmediata por WhatsApp escribiendo al 0990347911 o llamando a nuestra coordinadora Gissela al +593 99 600 2626. También puedes llenar el formulario interactivo en esta página."
+    a: "Puedes agendar de forma inmediata por WhatsApp escribiendo al 0990347911. También puedes llenar el formulario interactivo en esta página."
   },
   {
     q: "¿La consulta odontológica es realmente gratuita?",

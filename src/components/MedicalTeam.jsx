@@ -116,27 +116,27 @@ export default function MedicalTeam({ onOpenAppointment }) {
             </div>
           </div>
 
-          {/* Tarjeta 3: Coordinación y Citas (Gissela) */}
+          {/* Tarjeta 3: Recepción y Citas */}
           <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div className="bg-gradient-to-br from-amber-50 to-orange-50/30 p-6 text-center border-b border-slate-100">
-              <h4 className="text-xl font-bold text-slate-900">{CLINIC_INFO.coordinatorName}</h4>
+              <h4 className="text-xl font-bold text-slate-900">Recepción y Citas</h4>
               <p className="text-xs font-bold uppercase tracking-wider text-amber-600 mt-1">
-                Coordinación de Citas y Especialidades
+                Atención y Reservas DENTIMEDIC
               </p>
             </div>
             <div className="p-6 space-y-3 text-xs sm:text-sm text-slate-600 flex-grow">
-              <p>• <strong>Línea de Coordinación:</strong> {CLINIC_INFO.phoneCoordination}</p>
-              <p>• <strong>Función:</strong> Coordinar turnos con especialistas, ecografías y dudas sobre la atención.</p>
-              <p>• <strong>Horario:</strong> De lunes a sábado en horario institucional.</p>
+              <p>• <strong>Línea WhatsApp:</strong> {CLINIC_INFO.phoneMain}</p>
+              <p>• <strong>Función:</strong> Coordinación de citas médicas, odontológicas y ecografías.</p>
+              <p>• <strong>Horario:</strong> Lunes a Viernes (8am - 7pm) y Sábados (8:30am - 5pm).</p>
             </div>
             <div className="p-6 pt-0">
               <a
-                href={`https://wa.me/${CLINIC_INFO.phoneCoordination.replace(/\D/g, '')}?text=Hola%20${CLINIC_INFO.coordinatorName},%20te%20escribo%20desde%20la%20web%20para%20coordinar%20una%20cita%20m%C3%A9dica.`}
+                href={`https://wa.me/${CLINIC_INFO.whatsappMain}?text=Hola%20DENTIMEDIC,%20quisiera%20coordinar%20una%20cita%20m%C3%A9dica%20u%20odontol%C3%B3gica.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center text-xs font-bold text-amber-800 hover:text-white bg-amber-50 hover:bg-amber-600 py-3 rounded-xl transition-all"
               >
-                <span>Contactar a Coordinación</span>
+                <span>Agendar por WhatsApp</span>
               </a>
             </div>
           </div>

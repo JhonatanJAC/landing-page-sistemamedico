@@ -64,8 +64,8 @@ export default function Footer() {
                 <span>{CLINIC_INFO.address} ({CLINIC_INFO.sector}), a 2 cuadras de la Empresa Eléctrica.</span>
               </li>
               <li>
-                <span className="font-semibold text-slate-300 block">Teléfonos:</span>
-                <span>Citas: <strong>{CLINIC_INFO.phoneMain}</strong> | <strong>{CLINIC_INFO.phoneCoordination}</strong></span>
+                <span className="font-semibold text-slate-300 block">Teléfono WhatsApp:</span>
+                <span>Citas: <strong>{CLINIC_INFO.phoneMain}</strong></span>
               </li>
               <li>
                 <span className="font-semibold text-slate-300 block">Horarios:</span>

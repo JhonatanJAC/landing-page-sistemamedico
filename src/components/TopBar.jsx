@@ -12,13 +12,7 @@ export default function TopBar() {
             rel="noopener noreferrer"
             className="hover:text-brand-300 transition-colors"
           >
-            <span>Citas: <strong>{CLINIC_INFO.phoneMain}</strong></span>
-          </a>
-          <a 
-            href={`tel:${CLINIC_INFO.phoneCoordination.replace(/\s+/g, '')}`}
-            className="hover:text-brand-300 transition-colors"
-          >
-            <span>Coordinación: <strong>{CLINIC_INFO.phoneCoordination}</strong> ({CLINIC_INFO.coordinatorName})</span>
+            <span>Citas WhatsApp: <strong>{CLINIC_INFO.phoneMain}</strong></span>
           </a>
           <div className="text-slate-300">
             <span>Carapungo: Calle Alcalá OE6 11 y Alhambra ({CLINIC_INFO.sector})</span>
