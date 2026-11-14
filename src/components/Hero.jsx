@@ -58,8 +58,8 @@ export default function Hero({ onOpenAppointment }) {
           <div className="lg:col-span-6 relative flex flex-col justify-center w-full">
             <div className="relative w-full h-[440px] sm:h-[500px] lg:h-[530px] rounded-3xl bg-white shadow-2xl border-4 border-white overflow-hidden">
               <iframe
-                title="Ubicación DENTIMEDIC Alhambra 11 Carapungo"
-                src="https://maps.google.com/maps?q=Alhambra+11,+170204+Quito,+Ecuador&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                title="Ubicación DENTIMEDIC en Carapungo"
+                src="https://maps.google.com/maps?q=-0.09170284122228622,-78.44454956054688&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-[calc(100%+120px)] -mt-[115px] border-none"
                 loading="lazy"
                 allowFullScreen
