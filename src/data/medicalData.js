@@ -22,6 +22,7 @@ export const CLINIC_INFO = {
 };
 
 export const SPECIALTIES = [
+  // Especialidades Médicas
   {
     id: "dermatologia",
     title: "Dermatología",
@@ -157,7 +158,7 @@ export const SPECIALTIES = [
   {
     id: "terapia-fisica",
     title: "Terapia Física",
-    category: "terapias",
+    category: "medicina",
     categoryLabel: "Rehabilitación",
     badge: "Previa Cita",
     badgeType: "appointment",
@@ -168,13 +169,103 @@ export const SPECIALTIES = [
   {
     id: "podologia",
     title: "Podología",
-    category: "terapias",
+    category: "medicina",
     categoryLabel: "Cuidado Podológico",
     badge: "Previa Cita",
     badgeType: "appointment",
     desc: "Uña encarnada, callosidades y cuidado preventivo del pie.",
     schedule: "Coordinación previa de horario",
     icon: "Footprints"
+  },
+
+  // Especialidades de Odontología
+  {
+    id: "ortodoncia",
+    title: "Ortodoncia",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Brackets metálicos, estéticos y corrección de mordida.",
+    schedule: "Coordinación previa de horario",
+    icon: "Smile"
+  },
+  {
+    id: "endodoncia",
+    title: "Endodoncia",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Tratamiento avanzado de conductos y alivio del dolor dental.",
+    schedule: "Coordinación previa de horario",
+    icon: "ShieldAlert"
+  },
+  {
+    id: "estetica-dental",
+    title: "Estética Dental",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Diseño de sonrisa, blanqueamiento dental clínico y carillas.",
+    schedule: "Coordinación previa de horario",
+    icon: "Sparkles"
+  },
+  {
+    id: "cirugia-oral",
+    title: "Cirugía Oral y Maxilofacial",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Extracción quirúrgica de muelas del juicio y cirugía menor bucal.",
+    schedule: "Coordinación previa de horario",
+    icon: "Scissors"
+  },
+  {
+    id: "patologia-oral",
+    title: "Patología Oral",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Diagnóstico y tratamiento de lesiones bucales, aftas y encías.",
+    schedule: "Coordinación previa de horario",
+    icon: "Microscope"
+  },
+  {
+    id: "periodoncia",
+    title: "Periodoncia",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Tratamiento y cuidado de encías, gingivitis y periodontitis.",
+    schedule: "Coordinación previa de horario",
+    icon: "HeartHandshake"
+  },
+  {
+    id: "odontopediatria",
+    title: "Odontopediatría",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Atención dental preventiva, cálida y adaptada para niños.",
+    schedule: "Coordinación previa de horario",
+    icon: "Baby"
+  },
+  {
+    id: "rehabilitacion-oral",
+    title: "Rehabilitación Oral (Prótesis)",
+    category: "odontologia",
+    categoryLabel: "Especialidad de Odontología",
+    badge: "Previa Cita",
+    badgeType: "appointment",
+    desc: "Prótesis dentales fijas, removibles, coronas e incrustaciones.",
+    schedule: "Coordinación previa de horario",
+    icon: "ShieldCheck"
   }
 ];
 
