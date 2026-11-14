@@ -22,19 +22,19 @@ export const SPECIALTY_GROUPS = [
     label: 'Medicina',
     icon: '🩺',
     items: [
-      { value: 'Consulta Médica General ($10 USD)', label: 'Medicina General', badge: 'Solo $10 USD', badgeType: 'price', hint: 'Atención primaria y recetas (Mar, Jue, Sáb)' },
-      { value: 'Ginecología y Obstetricia', label: 'Ginecología y Obstetricia', badge: 'Atención Continua', badgeType: 'continuous', hint: 'Control prenatal, Papanicolaou y chequeo' },
-      { value: 'Pediatría', label: 'Pediatría', badge: 'Previa Cita', hint: 'Control de crecimiento, vacunas y salud infantil' },
-      { value: 'Dermatología', label: 'Dermatología', badge: 'Previa Cita', hint: 'Acné, manchas, alergias y hongos' },
-      { value: 'Gastroenterología', label: 'Gastroenterología', badge: 'Previa Cita', hint: 'Gastritis, reflujo, Helicobacter y colon' },
-      { value: 'Medicina Interna', label: 'Medicina Interna', badge: 'Previa Cita', hint: 'Hipertensión, diabetes y salud del adulto' },
-      { value: 'Otorrinolaringología', label: 'Otorrinolaringología', badge: 'Previa Cita', hint: 'Oído, nariz, garganta y lavados' },
-      { value: 'Traumatología y Ortopedia', label: 'Traumatología', badge: 'Previa Cita', hint: 'Fracturas, dolor articular y columna' },
-      { value: 'Urología', label: 'Urología', badge: 'Previa Cita', hint: 'Vías urinarias masculinas y femeninas' },
-      { value: 'Neurología', label: 'Neurología', badge: 'Previa Cita', hint: 'Migrañas, sistema nervioso y cefaleas' },
-      { value: 'Nutrición Clínica', label: 'Nutrición', badge: 'Previa Cita', hint: 'Planes nutricionales y control de peso' },
-      { value: 'Psicología Clínica', label: 'Psicología Clínica', badge: 'Previa Cita', hint: 'Terapia adultos: ansiedad y estrés' },
-      { value: 'Psicología Infantil', label: 'Psicología Infantil', badge: 'Previa Cita', hint: 'Conducta, atención y emociones en niños' },
+      { value: 'Consulta Médica General ($10 USD)', label: 'Medicina General', badge: '$10 USD', badgeType: 'promo-price', hint: 'Atención primaria y recetas (Mar, Jue, Sáb)' },
+      { value: 'Ginecología y Obstetricia ($10 USD)', label: 'Ginecología y Obstetricia', badge: '$10 USD', badgeType: 'promo-price', hint: 'Control prenatal, ecografía y chequeo' },
+      { value: 'Pediatría ($30 USD)', label: 'Pediatría', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Control de crecimiento, vacunas y salud infantil' },
+      { value: 'Dermatología ($30 USD)', label: 'Dermatología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Acné, manchas, alergias y hongos' },
+      { value: 'Gastroenterología ($30 USD)', label: 'Gastroenterología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Gastritis, reflujo, Helicobacter y colon' },
+      { value: 'Medicina Interna ($30 USD)', label: 'Medicina Interna', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Hipertensión, diabetes y salud del adulto' },
+      { value: 'Otorrinolaringología ($30 USD)', label: 'Otorrinolaringología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Oído, nariz, garganta y lavados' },
+      { value: 'Traumatología y Ortopedia ($30 USD)', label: 'Traumatología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Fracturas, dolor articular y columna' },
+      { value: 'Urología ($30 USD)', label: 'Urología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Vías urinarias masculinas y femeninas' },
+      { value: 'Neurología ($30 USD)', label: 'Neurología', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Migrañas, sistema nervioso y cefaleas' },
+      { value: 'Nutrición Clínica ($30 USD)', label: 'Nutrición', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Planes nutricionales y control de peso' },
+      { value: 'Psicología Clínica ($30 USD)', label: 'Psicología Clínica', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Terapia adultos: ansiedad y estrés' },
+      { value: 'Psicología Infantil ($30 USD)', label: 'Psicología Infantil', badge: '$30 USD', badgeType: 'price-specialty', hint: 'Conducta, atención y emociones en niños' },
     ]
   },
   {
@@ -152,10 +152,12 @@ export default function SpecialtySelect({ value, onChange, required = true }) {
             <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border hidden sm:inline-block ${
               selectedItem.badgeType === 'free' 
                 ? 'bg-amber-100 text-amber-900 border-amber-300' 
+                : selectedItem.badgeType === 'promo-price'
+                ? 'bg-teal-100 text-teal-900 border-teal-300 font-extrabold'
+                : selectedItem.badgeType === 'price-specialty'
+                ? 'bg-blue-50 text-blue-800 border-blue-200'
                 : selectedItem.badgeType === 'continuous'
                 ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
-                : selectedItem.badgeType === 'price'
-                ? 'bg-cyan-100 text-cyan-900 border-cyan-300'
                 : 'bg-slate-100 text-slate-700 border-slate-200'
             }`}>
               {selectedItem.badge}
@@ -293,10 +295,12 @@ export default function SpecialtySelect({ value, onChange, required = true }) {
                               <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
                                 item.badgeType === 'free'
                                   ? 'bg-amber-100 text-amber-900 border-amber-300'
+                                  : item.badgeType === 'promo-price'
+                                  ? 'bg-teal-100 text-teal-900 border-teal-300 font-extrabold'
+                                  : item.badgeType === 'price-specialty'
+                                  ? 'bg-blue-50 text-blue-800 border-blue-200'
                                   : item.badgeType === 'continuous'
                                   ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
-                                  : item.badgeType === 'price'
-                                  ? 'bg-cyan-100 text-cyan-900 border-cyan-300'
                                   : 'bg-slate-100 text-slate-600 border-slate-200'
                               }`}>
                                 {item.badge}

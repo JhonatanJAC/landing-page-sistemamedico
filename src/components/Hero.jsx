@@ -33,22 +33,49 @@ export default function Hero({ onOpenAppointment }) {
               Atención médica, odontológica y de especialidades con calidez humana, tecnología moderna y tarifas al alcance de toda la familia en el sector La Morenita, Carapungo.
             </p>
 
-            {/* Tarjetas de Promoción Oficial */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="bg-white p-4 sm:p-5 rounded-2xl border-2 border-amber-300 shadow-sm text-left">
-                <span className="text-xs uppercase tracking-wider font-bold text-amber-700 block">Evaluación Bucal</span>
-                <span className="text-base font-extrabold text-slate-900 block mt-1">Consulta Odontológica</span>
-                <span className="inline-block bg-amber-100 text-amber-900 text-xs font-black px-2.5 py-1 rounded-md mt-2">
-                  ¡GRATUITA!
-                </span>
+            {/* Tarjetas de Promoción y Tarifas Oficiales */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              {/* Tarjeta 1: Medicina General y Ginecología */}
+              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border-2 border-brand-400 shadow-sm text-left flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-brand-700 block">Tarifa Preferencial</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
+                    Medicina General & Ginecología
+                  </span>
+                </div>
+                <div className="mt-2 flex items-baseline gap-1">
+                  <span className="text-xl font-black text-brand-600">$10</span>
+                  <span className="text-[10px] font-bold text-slate-500 uppercase">USD c/u</span>
+                </div>
               </div>
 
-              <div className="bg-white p-4 sm:p-5 rounded-2xl border-2 border-brand-300 shadow-sm text-left">
-                <span className="text-xs uppercase tracking-wider font-bold text-brand-700 block">Atención Primaria</span>
-                <span className="text-base font-extrabold text-slate-900 block mt-1">Consulta Médica General</span>
-                <span className="inline-block bg-brand-50 text-brand-dark text-base font-black px-2.5 py-0.5 rounded-md mt-1.5">
-                  $10 USD
-                </span>
+              {/* Tarjeta 2: Consulta Odontológica */}
+              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border-2 border-amber-300 shadow-sm text-left flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-amber-700 block">Evaluación Bucal</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
+                    Consulta Odontológica
+                  </span>
+                </div>
+                <div className="mt-2">
+                  <span className="inline-block bg-amber-100 text-amber-900 text-xs font-black px-2.5 py-0.5 rounded-md">
+                    ¡GRATUITA!
+                  </span>
+                </div>
+              </div>
+
+              {/* Tarjeta 3: Demás Especialidades */}
+              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200 shadow-sm text-left flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-slate-500 block">Especialistas</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
+                    Demás Especialidades
+                  </span>
+                </div>
+                <div className="mt-2 flex items-baseline gap-1">
+                  <span className="text-xl font-black text-slate-800">$30</span>
+                  <span className="text-[10px] font-bold text-slate-500 uppercase">USD</span>
+                </div>
               </div>
             </div>
 

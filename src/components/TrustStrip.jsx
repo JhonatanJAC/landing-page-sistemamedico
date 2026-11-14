@@ -12,7 +12,7 @@ export default function TrustStrip() {
     },
     {
       title: "Precios Accesibles",
-      desc: "Consulta médica $10 y dental gratuita"
+      desc: "Medicina y Ginecología $10 | Especialidades $30"
     },
     {
       title: "Pagos Electrónicos",

@@ -17,19 +17,54 @@ export const CLINIC_INFO = {
   },
   promotions: {
     dentalConsultation: "GRATUITA",
-    medicalConsultationPrice: "$10 USD"
+    generalMedicinePrice: "$10 USD",
+    gynecologyPrice: "$10 USD",
+    specialtiesPrice: "$30 USD"
   }
 };
 
 export const SPECIALTIES = [
-  // Especialidades Médicas
+  // Especialidades Médicas con énfasis en precios ($10 y $30)
+  {
+    id: "medicina-general",
+    title: "Medicina General",
+    category: "medicina",
+    categoryLabel: "Atención Primaria",
+    badge: "$10 USD",
+    badgeType: "promo-price",
+    desc: "Atención primaria integral, evaluación diagnóstica, prescripción y recetas.",
+    schedule: "Fijo: Mar, Jue y Sáb (9am - 2pm)",
+    icon: "Activity"
+  },
+  {
+    id: "ginecologia",
+    title: "Ginecología y Obstetricia",
+    category: "medicina",
+    categoryLabel: "Especialidad Médica",
+    badge: "$10 USD",
+    badgeType: "promo-price",
+    desc: "Control prenatal, chequeo preventivo femenino, ecografía y Papanicolaou.",
+    schedule: "Atención continua todo el tiempo",
+    icon: "Heart"
+  },
+  {
+    id: "pediatria",
+    title: "Pediatría",
+    category: "medicina",
+    categoryLabel: "Especialidad Médica",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
+    desc: "Control de crecimiento, vacunas y salud infantil.",
+    schedule: "Coordinación previa de horario",
+    icon: "Baby"
+  },
   {
     id: "dermatologia",
     title: "Dermatología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Acné, manchas, alergias cutáneas, hongos y lunares.",
     schedule: "Coordinación previa de horario",
     icon: "ShieldAlert"
@@ -39,30 +74,19 @@ export const SPECIALTIES = [
     title: "Gastroenterología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Gastritis, Helicobacter pylori, reflujo y colon irritable.",
     schedule: "Coordinación previa de horario",
     icon: "Apple"
-  },
-  {
-    id: "ginecologia",
-    title: "Ginecología y Obstetricia",
-    category: "medicina",
-    categoryLabel: "Especialidad Médica",
-    badge: "Atención Continua",
-    badgeType: "continuous",
-    desc: "Control prenatal, chequeo preventivo femenino y Papanicolaou.",
-    schedule: "Atención continua todo el tiempo",
-    icon: "Heart"
   },
   {
     id: "medicina-interna",
     title: "Medicina Interna",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Hipertensión, diabetes y manejo integral del paciente adulto.",
     schedule: "Coordinación previa de horario",
     icon: "ClipboardCheck"
@@ -72,8 +96,8 @@ export const SPECIALTIES = [
     title: "Otorrinolaringología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Oído, nariz, garganta, sinusitis y lavados óticos.",
     schedule: "Coordinación previa de horario",
     icon: "Ear"
@@ -83,63 +107,19 @@ export const SPECIALTIES = [
     title: "Traumatología y Ortopedia",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Fracturas, esguinces, dolores articulares y lumbalgia.",
     schedule: "Coordinación previa de horario",
     icon: "Bone"
-  },
-  {
-    id: "nutricion",
-    title: "Nutrición",
-    category: "medicina",
-    categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
-    desc: "Planes nutricionales clínicos y control de peso.",
-    schedule: "Coordinación previa de horario",
-    icon: "Salad"
-  },
-  {
-    id: "psicologia-clinica",
-    title: "Psicología Clínica",
-    category: "medicina",
-    categoryLabel: "Salud Mental",
-    badge: "Previa Cita",
-    badgeType: "appointment",
-    desc: "Psicoterapia para ansiedad, depresión, estrés y duelo.",
-    schedule: "Coordinación previa de horario",
-    icon: "Brain"
-  },
-  {
-    id: "psicologia-infantil",
-    title: "Psicología Infantil",
-    category: "medicina",
-    categoryLabel: "Salud Mental",
-    badge: "Previa Cita",
-    badgeType: "appointment",
-    desc: "Apoyo en conducta, atención y desarrollo emocional infantil.",
-    schedule: "Coordinación previa de horario",
-    icon: "HeartHandshake"
-  },
-  {
-    id: "pediatria",
-    title: "Pediatría",
-    category: "medicina",
-    categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
-    desc: "Control de crecimiento, vacunas y salud infantil.",
-    schedule: "Coordinación previa de horario",
-    icon: "Baby"
   },
   {
     id: "urologia",
     title: "Urología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Vías urinarias masculinas y femeninas, próstata y riñones.",
     schedule: "Coordinación previa de horario",
     icon: "Cross"
@@ -149,19 +129,52 @@ export const SPECIALTIES = [
     title: "Neurología",
     category: "medicina",
     categoryLabel: "Especialidad Médica",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Migrañas, dolores de cabeza, sistema nervioso y control neurológico.",
     schedule: "Coordinación previa de horario",
     icon: "Brain"
+  },
+  {
+    id: "nutricion",
+    title: "Nutrición",
+    category: "medicina",
+    categoryLabel: "Especialidad Médica",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
+    desc: "Planes nutricionales clínicos y control de peso.",
+    schedule: "Coordinación previa de horario",
+    icon: "Salad"
+  },
+  {
+    id: "psicologia-clinica",
+    title: "Psicología Clínica",
+    category: "medicina",
+    categoryLabel: "Salud Mental",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
+    desc: "Psicoterapia para ansiedad, depresión, estrés y duelo.",
+    schedule: "Coordinación previa de horario",
+    icon: "Brain"
+  },
+  {
+    id: "psicologia-infantil",
+    title: "Psicología Infantil",
+    category: "medicina",
+    categoryLabel: "Salud Mental",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
+    desc: "Apoyo en conducta, atención y desarrollo emocional infantil.",
+    schedule: "Coordinación previa de horario",
+    icon: "HeartHandshake"
   },
   {
     id: "terapia-fisica",
     title: "Terapia Física",
     category: "medicina",
     categoryLabel: "Rehabilitación",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Rehabilitación muscular, contracturas y movilidad física.",
     schedule: "Coordinación previa de horario",
     icon: "Activity"
@@ -171,8 +184,8 @@ export const SPECIALTIES = [
     title: "Podología",
     category: "medicina",
     categoryLabel: "Cuidado Podológico",
-    badge: "Previa Cita",
-    badgeType: "appointment",
+    badge: "$30 USD",
+    badgeType: "price-specialty",
     desc: "Uña encarnada, callosidades y cuidado preventivo del pie.",
     schedule: "Coordinación previa de horario",
     icon: "Footprints"
@@ -364,8 +377,8 @@ export const FAQS = [
     a: "Atendemos de lunes a viernes de 8:00 am a 7:00 pm y sábados de 8:30 am a 5:00 pm. Odontología General y Ginecología atienden de manera continua. Medicina General tiene horario fijo los Martes, Jueves y Sábados de 9:00 am a 2:00 pm (y previa cita el resto de días). Las demás especialidades se atienden bajo previa cita coordinada."
   },
   {
-    q: "¿Cuál es el valor de la Consulta Médica General?",
-    a: "La Consulta Médica General tiene una tarifa institucional oficial de solo $10 USD, permitiendo que las familias de Carapungo accedan a diagnóstico y tratamiento de calidad a un costo accesible."
+    q: "¿Cuáles son las tarifas y costos de consulta en DENTIMEDIC?",
+    a: "Nuestras tarifas oficiales están pensadas para cuidar tu salud y tu economía: Consulta Odontológica ¡GRATUITA! (evaluación y diagnóstico), Consulta Médica General por solo $10 USD, Consulta de Ginecología y Obstetricia por solo $10 USD, y las demás Especialidades Médicas (Pediatría, Dermatología, Traumatología, Neurología, etc.) por solo $30 USD."
   },
   {
     q: "¿Qué medios de pago aceptan?",

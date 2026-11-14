@@ -87,10 +87,16 @@ export default function Specialties({ onSelectSpecialty }) {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filtered.map((item) => {
-              const isContinuous = item.badgeType === 'continuous';
-              const badgeClass = isContinuous
-                ? "bg-emerald-100 text-emerald-800 border-emerald-300 font-bold"
-                : "bg-slate-100 text-slate-600 border-slate-200";
+              let badgeClass = "bg-slate-100 text-slate-700 border-slate-200 font-semibold";
+              if (item.badgeType === 'promo-price') {
+                badgeClass = "bg-teal-100 text-teal-900 border-teal-300 font-black";
+              } else if (item.badgeType === 'price-specialty') {
+                badgeClass = "bg-blue-50 text-blue-800 border-blue-200 font-bold";
+              } else if (item.badgeType === 'free') {
+                badgeClass = "bg-amber-100 text-amber-900 border-amber-300 font-black";
+              } else if (item.badgeType === 'continuous') {
+                badgeClass = "bg-emerald-100 text-emerald-800 border-emerald-300 font-bold";
+              }
 
               return (
                 <div 
