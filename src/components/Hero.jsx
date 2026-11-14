@@ -30,7 +30,7 @@ export default function Hero({ onOpenAppointment }) {
             </p>
 
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Atención médica, odontológica y de especialidades con calidez humana, tecnología moderna y tarifas al alcance de toda la familia en el sector La Morenita, Carapungo.
+              Atención médica, odontológica y de especialidades con calidez humana, tecnología moderna y tarifas al alcance de toda la familia en el sector La Morenita, Carapungo, Calderón y sus alrededores.
             </p>
 
             {/* Botones de Acción */}
