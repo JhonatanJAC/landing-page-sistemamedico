@@ -82,13 +82,10 @@ export default function About() {
                       VISIÓN
                     </h3>
                   </div>
-                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed mb-2 text-justify">
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed text-justify">
                     Prestar servicios de salud, y dar atención no sólo a personas con enfermedad sino también a otros aspectos físicos y psíquicos que producen bienestar a éstas, abarcando todos los segmentos de edad de la población, y ejerciendo actividades específicas y concretas.
                   </p>
                 </div>
-                <p className="text-[11px] text-slate-600 leading-snug text-justify pt-2 border-t border-slate-100">
-                  Para ello, pretendemos que <strong className="text-slate-900">DENTIMEDIC</strong> se distinga como un centro de referencia en el sector de la medicina privada para la asistencia ambulatoria de alta resolución y complejidad en todas las especialidades médicas y odontológicas, por su accesibilidad, lo que permitirá cumplir con las expectativas de nuestros pacientes.
-                </p>
               </div>
 
             </div>
