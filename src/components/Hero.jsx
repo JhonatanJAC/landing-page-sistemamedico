@@ -33,54 +33,8 @@ export default function Hero({ onOpenAppointment }) {
               Atención médica, odontológica y de especialidades con calidez humana, tecnología moderna y tarifas al alcance de toda la familia en el sector La Morenita, Carapungo.
             </p>
 
-            {/* Tarjetas de Promoción y Tarifas Oficiales */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              {/* Tarjeta 1: Medicina General y Ginecología */}
-              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border-2 border-brand-400 shadow-sm text-left flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-brand-700 block">Tarifa Preferencial</span>
-                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
-                    Medicina General & Ginecología
-                  </span>
-                </div>
-                <div className="mt-2 flex items-baseline gap-1">
-                  <span className="text-xl font-black text-brand-600">$10</span>
-                  <span className="text-[10px] font-bold text-slate-500 uppercase">USD c/u</span>
-                </div>
-              </div>
-
-              {/* Tarjeta 2: Consulta Odontológica */}
-              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border-2 border-amber-300 shadow-sm text-left flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-amber-700 block">Evaluación Bucal</span>
-                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
-                    Consulta Odontológica
-                  </span>
-                </div>
-                <div className="mt-2">
-                  <span className="inline-block bg-amber-100 text-amber-900 text-xs font-black px-2.5 py-0.5 rounded-md">
-                    ¡GRATUITA!
-                  </span>
-                </div>
-              </div>
-
-              {/* Tarjeta 3: Demás Especialidades */}
-              <div className="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200 shadow-sm text-left flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-slate-500 block">Especialistas</span>
-                  <span className="text-xs sm:text-sm font-extrabold text-slate-900 block mt-1 leading-snug">
-                    Demás Especialidades
-                  </span>
-                </div>
-                <div className="mt-2 flex items-baseline gap-1">
-                  <span className="text-xl font-black text-slate-800">$30</span>
-                  <span className="text-[10px] font-bold text-slate-500 uppercase">USD</span>
-                </div>
-              </div>
-            </div>
-
             {/* Botones de Acción */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <a
                 href={`https://wa.me/${CLINIC_INFO.whatsappMain}?text=Hola%20DENTIMEDIC,%20quisiera%20agendar%20una%20cita%20m%C3%A9dica%20u%20odontol%C3%B3gica%20en%20Carapungo.`}
                 target="_blank"
