@@ -100,7 +100,7 @@ export default function Contact({ prefilledSpecialty }) {
                 </span>
               </div>
               <p className="text-xs text-slate-600 mb-3 leading-relaxed">
-                Aceptamos <strong>todas las tarjetas</strong> de crédito y débito (corriente y diferido):
+                Aceptamos <strong>todas las tarjetas</strong> de crédito y débito (corriente):
               </p>
 
               {/* Grid de Tarjetas Oficiales */}
@@ -154,12 +154,15 @@ export default function Contact({ prefilledSpecialty }) {
                   </svg>
                   <span>Con la seguridad de <strong className="text-teal-700 font-bold">paymentez</strong></span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[11px] font-semibold">
-                    Efectivo
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="px-2.5 py-0.5 rounded-md bg-emerald-600 text-white text-[11px] font-black tracking-wide shadow-2xs">
+                    DeUna
                   </span>
                   <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[11px] font-semibold">
                     Transferencia
+                  </span>
+                  <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[11px] font-semibold">
+                    Efectivo
                   </span>
                 </div>
               </div>

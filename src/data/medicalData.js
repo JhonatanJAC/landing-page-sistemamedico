@@ -391,7 +391,7 @@ export const FAQS = [
   },
   {
     q: "¿Qué medios de pago aceptan?",
-    a: "Aceptamos efectivo, transferencias bancarias y todas las tarjetas de crédito y débito: VISA, MasterCard, Diners Club International, American Express y Discover, con la plataforma segura Paymentez."
+    a: "Aceptamos efectivo, transferencias bancarias, DeUna y todas las tarjetas de crédito y débito (corriente): VISA, MasterCard, Diners Club International, American Express y Discover, con la plataforma segura Paymentez."
   },
   {
     q: "¿Dónde están ubicados y cuál es la referencia de llegada?",
