@@ -31,8 +31,8 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
               <img 
-                src="/assets/facilities/medical_consultation.jpg" 
-                alt="Consultorio médico de DENTIMEDIC" 
+                src="/assets/centromedico.jpeg" 
+                alt="Centro Médico y Odontológico DENTIMEDIC" 
                 className="w-full h-[430px] object-cover"
               />
               <div className="p-6 bg-slate-900 text-white">
